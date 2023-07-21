@@ -100,3 +100,83 @@ body {
 .link-pinturas::before {
     content: '\e90a';
 }
+
+.main {
+    padding: 24px 16px;
+}
+
+.page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2C343A;
+}
+
+.card__content {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+}
+
+.card__emphasis {
+    grid-column: span 2;
+}
+
+.card__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.card__profile {
+    color: #95999C;
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.card__info {
+    display: flex;
+    align-items: center;
+    color: #95999C;
+}
+
+.info-time::before {
+    content: '\e90c';
+    margin-right: 8px;
+}
+
+.info-views::before {
+    content: '\e90f';
+    margin-right: 8px;
+}
+
+.card__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0480DC;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.btn-play::before {
+    content: '\e90b';
+    font-size: 24px;
+}
+
+.btn-emphasis {
+    width: 100%;
+    grid-column: span 2;
+}
+
+.btn-emphasis::before {
+    margin-right: 8px;
+}
