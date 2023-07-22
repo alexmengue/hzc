@@ -103,6 +103,8 @@ body {
 
 .main {
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 
 .page-title {
@@ -115,6 +117,10 @@ body {
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
+}
+
+.main-card {
+    margin-bottom: 16px;
 }
 
 .card__content {
@@ -165,6 +171,7 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 
 .btn-play::before {
@@ -179,4 +186,14 @@ body {
 
 .btn-emphasis::before {
     margin-right: 8px;
+}
+
+.section {
+    display: grid;
+    gap: 16px;
+}
+
+.section__title {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
