@@ -18,6 +18,7 @@
         <header class="header">
             <button class="header__menu" aria-label="Menu"><i></i></button>
             <img class="header__logo" src="assets/img/logo.svg" alt="Logotipo da HZC" />
+            <p class="header__profile">Bruno Lopes</p>
             <button class="header__notification" aria-label="Notificação"><i></i></button>
         </header>
 
@@ -35,8 +36,9 @@
         <main class="main">
             <h2 class="page-title">Início</h2>
 
-            <article class="card main-card">
-                <img class="card__img" src="assets/img/banner-mobile_1.png" alt="Banner do cartão" />
+            <article class="card main-card main-video">
+                <img class="card__img card-mobile" src="assets/img/banner-mobile_1.png" alt="Banner do cartão" />
+                <img class="card__img card-desktop" src="assets/img/banner_1.png" alt="Banner do cartão" />
                 <div class="card__content">
                     <p class="card__emphasis">Vídeo em destaque</p>
                     <h3 class="card__title">HZC - Life is... / 2021</h3>
@@ -47,7 +49,43 @@
                 </div>
             </article>
 
-            <section class="section">
+            <article class="card card-recents recent-videos">
+                <h3 class="card__title">Vídeos recentes</h3>
+                <a class="card__link" href="#">Ver todos</a>
+                <ul class="card__list">
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/miniatura_1.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">HZC - Love Machine</h4>
+                        <p class="card-item__profile">Julia Fonseca</p>
+                    </li>
+
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/miniatura_2.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">HZC - Vol.3</h4>
+                        <p class="card-item__profile">Julia Fonseca</p>
+                    </li>
+
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/miniatura_3.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">HZC - Pescaria na Urca</h4>
+                        <p class="card-item__profile">Julia Fonseca</p>
+                    </li>
+
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/miniatura_4.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">Vidalocagi - Guerreiros do Asfalto</h4>
+                        <p class="card-item__profile">Julia Fonseca</p>
+                    </li>
+
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/miniatura_5.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">Vidalocagi - Não importa o nível</h4>
+                        <p class="card-item__profile">Julia Fonseca</p>
+                    </li>
+                </ul>
+            </article>            
+
+            <section class="section videos-section">
                 <h3 class="section__title">Vídeos mais vistos</h3>
 
                 <article class="card">
@@ -91,58 +129,107 @@
                 </article>
             </section>
 
-            <article class="card main-card">
-                <img class="card__img" src="assets/img/banner-mobile_2.png" alt="Banner do cartão" />
+            <article class="card card-recents recent-products">
+                <h3 class="card__title">Novas artes</h3>
+                <a class="card__link" href="#">Ver todas</a>
+                <ul class="card__list">
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/Rectangle 97.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">Sem título 01</h4>
+                        <p class="card-item__profile">Antonio Tebyriçá</p>
+                    </li>
+
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/Frame 43.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">Sem título 02</h4>
+                        <p class="card-item__profile">Antonio Tebyriçá</p>
+                    </li>
+
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/Frame 43-1.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">Segurança</h4>
+                        <p class="card-item__profile">Raphael Gibson</p>
+                    </li>
+
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/Frame 43-2.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">Malunguisse</h4>
+                        <p class="card-item__profile">Carolina Canavarro</p>
+                    </li>
+
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/Frame 43-3.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">Coroa da Converse</h4>
+                        <p class="card-item__profile">Nikolas de Murtas</p>
+                    </li>
+
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/Frame 43-1.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">Segurança</h4>
+                        <p class="card-item__profile">Raphael Gibson</p>
+                    </li>
+
+                    <li class="card__item">
+                        <img class="card-item__img" src="assets/img/Rectangle 97.png" alt="Thumbnail" />
+                        <h4 class="card-item__title">Sem título 03</h4>
+                        <p class="card-item__profile">Antonio Tebyriçá</p>
+                    </li>
+                </ul>
+            </article>    
+
+            <article class="card main-card main-product">
+                <img class="card__img card-mobile" src="assets/img/banner-mobile_2.png" alt="Banner do cartão" />
+                <img class="card__img card-desktop" src="assets/img/banner_2.png" alt="Banner do cartão" />
                 <div class="card__content">
                     <p class="card__emphasis">Nova arte</p>
                     <h3 class="card__title">Only Zikas - Lagoa Dompa Club</h3>
-                    <p class="card__profile">Bruno Lopes</p>
+                    <p class="card__profile">João ZMS</p>
                     <p class="card__info info-time">33,33</p>
                     <p class="card__info info-views">33 visualizações</p>
-                    <button class="card__btn btn-play btn-emphasis">Comprar agora</button>
+                    <button class="card__btn btn-buy btn-emphasis">Comprar agora</button>
                 </div>
             </article>
 
-            <section class="section">
+            <section class="section products-section">
                 <h3 class="section__title">Camisas mais recentes</h3>
 
                 <article class="card">
-                    <img class="card__img" src="assets/img/produto_1.png" alt="Vídeo" />
+                    <img class="card__img" src="assets/img/produto_1.png" alt="Produto" />
                     <div class="card__content">
                         <p class="card__profile">André Soares</p>
                         <h3 class="card__title">IBM</h3>
                         <p class="card__info info-time">33,33</p>
-                        <button class="card__btn btn-play" aria-label="Assistir agora"></button>
+                        <button class="card__btn btn-buy" aria-label="Comprar agora"></button>
                     </div>
                 </article>
 
                 <article class="card">
-                    <img class="card__img" src="assets/img/produto_2.png" alt="Vídeo" />
+                    <img class="card__img" src="assets/img/produto_2.png" alt="Produto" />
                     <div class="card__content">
                         <p class="card__profile">Bruno Lopes</p>
                         <h3 class="card__title">Huflez Crew Philosophy Club</h3>
                         <p class="card__info info-time">33,33</p>
-                        <button class="card__btn btn-play" aria-label="Assistir agora"></button>
+                        <button class="card__btn btn-buy" aria-label="Comprar agora"></button>
                     </div>
                 </article>
 
                 <article class="card">
-                    <img class="card__img" src="assets/img/produto_3.png" alt="Vídeo" />
+                    <img class="card__img" src="assets/img/produto_3.png" alt="Produto" />
                     <div class="card__content">
                         <p class="card__profile">Luiza Sampaio</p>
                         <h3 class="card__title">Corujita Noturna</h3>
                         <p class="card__info info-time">33,33</p>
-                        <button class="card__btn btn-play" aria-label="Assistir agora"></button>
+                        <button class="card__btn btn-buy" aria-label="Comprar agora"></button>
                     </div>
                 </article>
 
                 <article class="card">
-                    <img class="card__img" src="assets/img/produto_4.png" alt="Vídeo" />
+                    <img class="card__img" src="assets/img/produto_4.png" alt="Produto" />
                     <div class="card__content">
                         <p class="card__profile">Bruno Lopes</p>
                         <h3 class="card__title">GGG - Gatin G Gorro</h3>
                         <p class="card__info info-time">33,33</p>
-                        <button class="card__btn btn-play" aria-label="Assistir agora"></button>
+                        <button class="card__btn btn-buy" aria-label="Comprar agora"></button>
                     </div>
                 </article>
             </section>
